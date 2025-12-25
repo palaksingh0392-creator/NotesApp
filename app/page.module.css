@@ -1,0 +1,67 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.addLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.noteCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 15px;
+}
+
+.noteTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.noteContent {
+  margin-top: 8px;
+  color: #2a2929;
+}
+
+.deleteBtn {
+  margin-top: 10px;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editBtn {
+  margin-top: 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.noteContent ul {
+  padding-left: 20px;
+}
+
+.noteContent li {
+  margin-bottom: 6px;
+}
+
+.noteContent p {
+  margin: 6px 0;
+}

@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT BACKGROUND → DARK TEXT */
+body.margritas {
+  background-image: url("/wallpapers/margritas.webp");
+  color: white; /* dark text */
+}
+
+/* DARK BACKGROUND → LIGHT TEXT */
+body.ElysiumFlowers {
+  background-image: url("/wallpapers/ElysiumFlowers.webp");
+  color: black; /* light text */
+}
+
+body.rainbow {
+  background-image: url("/wallpapers/rainbow.webp");
+  color: black;
+}
+/* DARK BACKGROUND → LIGHT TEXT */
+body.blooms {
+  background-image: url("/wallpapers/blooms.webp");
+  color: rgb(0, 0, 0); /* light text */
+}
+
+body.whale {
+  background-image: url("/wallpapers/whale.webp");
+  color: black;
+}
+
+/* Let text inherit color */
+.noteContent {
+  opacity: 0.9;
+  color: azure;
+}
+
+.noteTitle {
+  font-weight: bold;
+}
+
+/* Overlay ONLY for dark themes */
+body.ElysiumFlowers::before,
+body.blooms::before,
+body.margritas::before,
+body.rainbow::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+.noteCard {
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.75);
+}
+/* GLASS OVERLAY CONTAINER */
+.overlay {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(-1px);
+  background: #ffffff0d;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  box-shadow: 0 20px 40px #00000026;
+}
+/* DARK THEME OVERLAY */
+body.ElysiumFlowers .overlay,
+body.margritas .overlay,
+body.drawing .overlay {
+  background: #0000002b;
+}
+button,
+a {
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Primary buttons */
+button {
+  color: #fff;
+  cursor: pointer;
+  background: #46504c;
+  border: none;
+  padding: 8px 14px;
+}
+
+/* Hover effect */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Links styled as buttons */
+a.editBtn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #16a34a;
+  color: white;
+  text-decoration: none;
+}
